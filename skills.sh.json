@@ -4,42 +4,33 @@
   "groupings": [
     {
       "title": "Get started",
-      "description": "Connect to Orchestor and choose the right workflow.",
+      "description": "Connect and choose a workflow.",
       "skills": [
         "orchestor",
-        "orchestor-shared",
-        "orchestor-status",
-        "orchestor-account"
+        "orchestor-cli",
+        "orchestor-integrations"
       ]
     },
     {
-      "title": "AI visibility",
-      "description": "Compare brand visibility, inspect answers, and prioritize improvements.",
+      "title": "Evidence and collection",
+      "description": "Analyze saved evidence and collect requested observations.",
       "skills": [
-        "orchestor-brand",
-        "orchestor-answer",
-        "orchestor-report",
-        "orchestor-report-visibility",
-        "orchestor-domain",
-        "orchestor-manage-issues"
+        "orchestor-visibility",
+        "orchestor-monitoring",
+        "orchestor-research",
+        "orchestor-agentic-web",
+        "orchestor-perception",
+        "orchestor-shopping"
       ]
     },
     {
-      "title": "Monitoring",
-      "description": "Organize prompts and run measurements.",
+      "title": "Workspace and actions",
+      "description": "Organize work and turn evidence into actions.",
       "skills": [
-        "orchestor-prompt",
-        "orchestor-prompt-create",
-        "orchestor-prompt-run",
-        "orchestor-topic",
-        "orchestor-tag"
-      ]
-    },
-    {
-      "title": "Integrations",
-      "description": "Connect tools to the Orchestor MCP server.",
-      "skills": [
-        "orchestor-build-mcp-integration"
+        "orchestor-workspace",
+        "orchestor-manage-issues",
+        "orchestor-aeo-best-practices",
+        "orchestor-aeo-workflows"
       ]
     }
   ]

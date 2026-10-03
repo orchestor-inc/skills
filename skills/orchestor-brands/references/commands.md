@@ -7,9 +7,6 @@ installed leaf command’s `--help` for arguments, schema, permissions and limit
 
 | Command | Purpose |
 | --- | --- |
-| `orc answers exports create` | Record an AI answer export |
-| `orc answers get` | Get a single persisted AI Search answer |
-| `orc answers list` | List persisted AI Search answers |
 | `orc brands create` | Create AI Search brand |
 | `orc brands delete` | Soft-delete AI Search brand |
 | `orc brands get` | Get AI Search brand |
@@ -28,20 +25,3 @@ installed leaf command’s `--help` for arguments, schema, permissions and limit
 | `orc domains verification get` | Get domain verification status |
 | `orc domains verification refresh` | Recheck domain verification |
 | `orc domains verify` | Trigger DNS verification for a domain |
-| `orc fanout-queries list` | List fanout query catalog |
-| `orc report` | Summarize visibility, sentiment, and citations for a Workspace |
-| `orc reports bots get` | Bot / AI crawler traffic report |
-| `orc reports citations get` | Citations report |
-| `orc reports query-fanouts get` | Query fanouts report |
-| `orc reports referrals get` | AI assistant referral traffic report |
-| `orc reports sentiment get` | Sentiment report |
-| `orc reports visibility get` | Visibility report |
-| `orc reports web-search-results get` | Web search results report |
-| `orc review` | Run canonical review checks against a git diff |
-| `orc sources citations list` | List source citation aggregates |
-| `orc sources domains get` | Get source domain detail |
-| `orc sources domains list` | List source domains |
-| `orc sources gaps list` | List locally derived source gaps |
-| `orc sources urls get` | Get source URL detail |
-| `orc sources urls list` | List source URLs |
-| `orc websites visit-logs-list` | List observed website bot visits |

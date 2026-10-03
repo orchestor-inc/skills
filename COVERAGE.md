@@ -1,29 +1,28 @@
 # Skill coverage
 
-This is a 2026-10-03 source-catalog audit, not a production feature or test-status
-claim. All 457 commands in the public CLI registry map to a product skill.
-Specialized report/measurement prefixes take precedence over their parent family.
-Internal operator entrypoints are outside this distribution.
+2026-10-03 source catalog, CLI source version 0.6.2. All 457 catalog entries have
+one resource-skill owner. This is command routing coverage, not authenticated
+execution or a claim that every published binary supports every entry. Detailed
+operation names live in each resource skill's command references.
 
-| Product skill | Routed commands | Families |
+| Resource skill | Routed commands | Families (specialized leaves may have another owner) |
 | --- | ---: | --- |
-| `orchestor-cli` | 31 | `auth`, `whoami`, `status`, `workspace`, `config`, `api-keys`, `service-accounts`, `costs`, `usage`, `setup`, `completion`, `update`, `forge`, `stop` |
-| `orchestor-monitoring` | 60 | `init`, `observations`, `prompts`, `topics`, `tags`, `personas`, `regions`, `channels`, `runs`, `workspaces measurement-configurations`, `workspaces measurement-targets`, `workspaces quotas`, `workspaces setup` |
-| `orchestor-visibility` | 38 | `brands`, `domains`, `answers`, `reports`, `fanout-queries`, `sources`, `websites`, `report`, `review` |
+| `orchestor-cli` | 32 | `api-keys`, `auth`, `completion`, `config`, `costs`, `forge`, `review`, `service-accounts`, `setup`, `status`, `stop`, `update`, `usage`, `whoami`, `workspace` |
+| `orchestor-brands` | 18 | `brands`, `domains` |
+| `orchestor-prompts` | 35 | `personas`, `prompts`, `tags`, `topics` |
+| `orchestor-runs` | 25 | `channels`, `init`, `observations`, `regions`, `runs`, `workspaces` |
+| `orchestor-reports` | 9 | `report`, `reports`, `websites` |
+| `orchestor-answers` | 3 | `answers` |
+| `orchestor-sources` | 7 | `fanout-queries`, `sources` |
 | `orchestor-research` | 178 | `research` |
 | `orchestor-agentic-web` | 21 | `agentic-web`, `analytics` |
-| `orchestor-perception` | 9 | `perception`, `perception-attributes`, `reports perception`, `reports perception-rankings` |
-| `orchestor-shopping` | 17 | `products`, `reports shopping-performance`, `reports shopping-demand`, `reports shopping-trend`, `reports merchants` |
-| `orchestor-workspace` | 59 | `workspaces`, `projects`, `project-label-groups`, `initiatives`, `files`, `saved-views`, `feedbacks` |
+| `orchestor-perception` | 9 | `perception`, `perception-attributes`, `reports` |
+| `orchestor-shopping` | 17 | `products`, `reports` |
+| `orchestor-workspace` | 59 | `feedbacks`, `files`, `initiatives`, `project-label-groups`, `projects`, `saved-views`, `workspaces` |
 | `orchestor-manage-issues` | 29 | `issues` |
-| `orchestor-integrations` | 15 | `connect-sessions`, `connections`, `browser-context`, `browser-session` |
+| `orchestor-integrations` | 15 | `browser-context`, `browser-session`, `connect-sessions`, `connections` |
 
-`orchestor` chooses a workflow. `orchestor-aeo-best-practices` supplies analysis
-rules. `orchestor-aeo-workflows` composes baseline, audit, citation-gap, and content
-cycles. These three are task guidance rather than additional API coverage.
-
-Public customer workflows are distributable regardless of whether the caller is
-an external client or a future built-in product agent. Private deployment, data
-maintenance, internal browser-host control, and company operating procedures
-belong to the separate internal agent corpus. No built-in consumer integration
-is claimed by this release.
+`orchestor` routes requests, `orchestor-aeo-workflows` composes resource skills,
+and `orchestor-aeo-best-practices` reviews analysis. They add no CLI operations.
+The 17-skill count follows the current boundaries and is not a fixed quota.
+Internal operator commands and private infrastructure remain outside this bundle.

@@ -1,10 +1,10 @@
 ---
 name: orchestor-aeo-workflows
 description: "Run an Orchestor baseline assessment, monthly audit, citation-gap investigation, or content improvement cycle across reports, saved answers, public research, and Issues. Use for multi-step AEO reviews or agency/client reporting. Separates read-only diagnosis, proposed action, requested execution, and follow-up measurement; no guaranteed ranking or citation uplift."
-license: UNLICENSED
+license: MIT
 metadata:
   author: orchestor
-  version: "0.2.0"
+  version: "0.3.0"
 ---
 
 # Run an evidence-to-action AEO workflow
@@ -22,6 +22,19 @@ outreach are separate actions and require the corresponding request.
 | Investigate competitors being cited instead | [Citation gap](references/citation-gap.md) | Prompt/source gap and an evidence-backed next action |
 | Improve a piece of content and evaluate it | [Content cycle](references/content-cycle.md) | Proposed change, approval boundary, and follow-up design |
 | Adapt reporting to a client or internal team | [Audience](references/audience.md) | The same evidence presented for the recipient's decision |
+
+## Compose resource operations
+
+Use `orchestor-brands` for identity, `orchestor-prompts` for the question set,
+`orchestor-runs` for requested collection, `orchestor-reports` for aggregates,
+`orchestor-answers` for saved answer evidence, and `orchestor-sources` for source
+records. Load only needed skills. Public pages use `orchestor-research`; requested
+action records use `orchestor-manage-issues`.
+
+The [composition example](references/composition.md) shows inputs and outputs.
+Resource skills own exact CLI contracts. This parent owns the task sequence and
+result, not duplicate command implementations. Missing sibling skills can be
+resolved through current public CLI help or documentation.
 
 ## Shared preflight
 

@@ -1,10 +1,10 @@
 ---
 name: orchestor-cli
 description: "Install and use the orc CLI, authenticate, select workspaces, request structured output, paginate, use stdin and dry-run, handle errors, and manage automation identities. Use for connection failures, CLI scripting, account usage or costs, and safe repeatable API-backed operations. Do not use internal operator commands or inspect credential files."
-license: UNLICENSED
+license: MIT
 metadata:
   author: orchestor
-  version: "0.2.0"
+  version: "0.3.0"
 ---
 
 # Operate the Orchestor CLI

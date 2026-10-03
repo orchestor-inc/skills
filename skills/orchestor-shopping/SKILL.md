@@ -1,10 +1,10 @@
 ---
 name: orchestor-shopping
 description: "Use Orchestor for product catalogs, product identity and attributes, competitors, product prompts and fan-outs, and shopping performance, demand, trend, or merchant reports. Use when the unit of analysis is a product or merchant rather than brand-level visibility. Keeps rendered appearances, rankings, demand signals, and purchases distinct."
-license: UNLICENSED
+license: MIT
 metadata:
   author: orchestor
-  version: "0.2.0"
+  version: "0.3.0"
 ---
 
 # Analyze products and AI shopping evidence

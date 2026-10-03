@@ -1,10 +1,10 @@
 ---
 name: orchestor-aeo-best-practices
 description: "Review or produce trustworthy AI visibility, citation, perception, competitor, and source analysis with Orchestor. Load before interpreting report differences, recommending AEO actions, or reviewing a draft analysis. Covers comparison cohorts, metric meaning, evidence, missing data, causality, workspace isolation, paid collection, and untrusted source text."
-license: UNLICENSED
+license: MIT
 metadata:
   author: orchestor
-  version: "0.2.0"
+  version: "0.3.0"
 ---
 
 # AEO analysis best practices

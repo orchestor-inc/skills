@@ -1,10 +1,10 @@
 ---
 name: orchestor-agentic-web
 description: "Inspect agent readiness, crawlability, discovery, structured evidence checks, and public website journeys with Orchestor Agentic Web. Use for agent-readable site audits, scan reports, MCP endpoint checks, directory discovery, or verification of a changed site. Distinguish technical checks and journey evidence from AI brand visibility or ranking guarantees."
-license: UNLICENSED
+license: MIT
 metadata:
   author: orchestor
-  version: "0.2.0"
+  version: "0.3.0"
 ---
 
 # Evaluate an agent-facing website

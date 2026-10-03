@@ -3,34 +3,32 @@
   "notGrouped": "bottom",
   "groupings": [
     {
-      "title": "Get started",
-      "description": "Connect and choose a workflow.",
+      "title": "Resource skills",
+      "description": "CLI resources and their lifecycles.",
       "skills": [
-        "orchestor",
         "orchestor-cli",
+        "orchestor-brands",
+        "orchestor-prompts",
+        "orchestor-runs",
+        "orchestor-reports",
+        "orchestor-answers",
+        "orchestor-sources",
+        "orchestor-research",
+        "orchestor-agentic-web",
+        "orchestor-perception",
+        "orchestor-shopping",
+        "orchestor-workspace",
+        "orchestor-manage-issues",
         "orchestor-integrations"
       ]
     },
     {
-      "title": "Evidence and collection",
-      "description": "Analyze saved evidence and collect requested observations.",
+      "title": "Workflows and analysis rules",
+      "description": "Combine resource operations for a customer task.",
       "skills": [
-        "orchestor-visibility",
-        "orchestor-monitoring",
-        "orchestor-research",
-        "orchestor-agentic-web",
-        "orchestor-perception",
-        "orchestor-shopping"
-      ]
-    },
-    {
-      "title": "Workspace and actions",
-      "description": "Organize work and turn evidence into actions.",
-      "skills": [
-        "orchestor-workspace",
-        "orchestor-manage-issues",
-        "orchestor-aeo-best-practices",
-        "orchestor-aeo-workflows"
+        "orchestor",
+        "orchestor-aeo-workflows",
+        "orchestor-aeo-best-practices"
       ]
     }
   ]

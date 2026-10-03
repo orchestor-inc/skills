@@ -1,10 +1,10 @@
 ---
 name: orchestor-workspace
 description: "Manage Orchestor workspaces, membership, projects, milestones, initiatives, files, and saved views. Use for organizing customer work, workspace setup or access, storing requested artifacts, and locating project or milestone IDs. Preserves tenant boundaries and distinguishes task-project UUIDs from project keys; not infrastructure administration."
-license: UNLICENSED
+license: MIT
 metadata:
   author: orchestor
-  version: "0.2.0"
+  version: "0.3.0"
 ---
 
 # Organize an Orchestor workspace

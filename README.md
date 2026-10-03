@@ -1,139 +1,105 @@
 # Orchestor Agent Skills
 
-Agent Skills for using Orchestor from Claude Code, Codex, Cursor, and other
-compatible agents. Product knowledge is shared across clients: evidence analysis,
-monitoring, public-source research, workspace operations, and AEO workflows.
+Skills for using Orchestor's CLI resources to investigate AI visibility and act
+on evidence. Resource skills own command contracts and resource lifecycles.
+Parent workflows combine them for a customer's task. Edit ordinary `SKILL.md`
+files, try them on real work, and improve them from the results.
 
-## Available Skills
-
-### [orchestor](skills/orchestor/SKILL.md)
-
-Choose an Orchestor workflow.
-
-**When to use:** Use Orchestor to understand how brands appear in AI answers and decide what to improve. Use when the user asks about AI visibility, AEO, GEO, LLMO, competitor citations, monitoring, public-source research, or agent-ready websites without naming a specific command. Routes to product workflows; not internal Orchestor infrastructure administration.
-
-### [orchestor-cli](skills/orchestor-cli/SKILL.md)
-
-Operate the Orchestor CLI.
-
-**When to use:** Install and use the orc CLI, authenticate, select workspaces, request structured output, paginate, use stdin and dry-run, handle errors, and manage automation identities. Use for connection failures, CLI scripting, account usage or costs, and safe repeatable API-backed operations. Do not use internal operator commands or inspect credential files.
-
-### [orchestor-visibility](skills/orchestor-visibility/SKILL.md)
-
-Analyze brand visibility and citations.
-
-**When to use:** Analyze saved AI answers, brand visibility, mention share, citations, sentiment, query fan-outs, search results, sources, bot traffic, and referrals in Orchestor. Use for competitor comparisons, visibility changes, citation gaps, source analysis, or monthly evidence. Do not start new measurements as part of a read-only analysis.
-
-### [orchestor-monitoring](skills/orchestor-monitoring/SKILL.md)
-
-Configure and run AI observations.
-
-**When to use:** Configure Orchestor onboarding, brands, topics, prompts, personas, tags, measurement channels and locale; start, inspect, or cancel requested runs and batches. Use for adding monitoring questions, collecting fresh AI answers, reviewing onboarding configuration, or diagnosing run state. Distinguishes drafts, monitoring enablement, and credit-consuming execution.
-
-### [orchestor-research](skills/orchestor-research/SKILL.md)
-
-Research public sources with Orchestor.
-
-**When to use:** Research public websites, search demand, SaaS products and reviews, companies, founders, communities, social posts, videos, and transcripts through Orchestor. Use for source discovery, competitor research, citation-source inspection, market research, keyword analysis, or web scrape/map/crawl/extract tasks. Choose a source-specific command and preserve provenance; not saved AI-answer reporting.
-
-### [orchestor-agentic-web](skills/orchestor-agentic-web/SKILL.md)
-
-Evaluate an agent-facing website.
-
-**When to use:** Inspect agent readiness, crawlability, discovery, structured evidence checks, and public website journeys with Orchestor Agentic Web. Use for agent-readable site audits, scan reports, MCP endpoint checks, directory discovery, or verification of a changed site. Distinguish technical checks and journey evidence from AI brand visibility or ranking guarantees.
-
-### [orchestor-perception](skills/orchestor-perception/SKILL.md)
-
-Analyze attributed brand characteristics.
-
-**When to use:** Analyze Orchestor brand perception and attribute rankings from saved answer text, or import explicitly requested quoted attribute observations. Use for brand associations, qualitative comparisons, and exact-evidence annotation. Preserves SHA-256 digests and UTF-16 offsets; attribute mention is not automatically positive sentiment, product truth, or causal attribution.
-
-### [orchestor-shopping](skills/orchestor-shopping/SKILL.md)
-
-Analyze products and AI shopping evidence.
-
-**When to use:** Use Orchestor for product catalogs, product identity and attributes, competitors, product prompts and fan-outs, and shopping performance, demand, trend, or merchant reports. Use when the unit of analysis is a product or merchant rather than brand-level visibility. Keeps rendered appearances, rankings, demand signals, and purchases distinct.
-
-### [orchestor-workspace](skills/orchestor-workspace/SKILL.md)
-
-Organize an Orchestor workspace.
-
-**When to use:** Manage Orchestor workspaces, membership, projects, milestones, initiatives, files, and saved views. Use for organizing customer work, workspace setup or access, storing requested artifacts, and locating project or milestone IDs. Preserves tenant boundaries and distinguishes task-project UUIDs from project keys; not infrastructure administration.
-
-### [orchestor-manage-issues](skills/orchestor-manage-issues/SKILL.md)
-
-Manage Orchestor Issues.
-
-**When to use:** Create, find, update, classify, and organize tasks and Issues inside an Orchestor workspace, including project and milestone assignment. Use when a user asks to record an action from a workspace URL, a screen, or analysis evidence. Complete the requested record operation; do not substitute GitHub Issues or start implementation and deployment.
-
-### [orchestor-integrations](skills/orchestor-integrations/SKILL.md)
-
-Connect agents and external services.
-
-**When to use:** Connect Claude Code, Codex, Cursor, or another supported client to Orchestor MCP; inspect provider connections, OAuth connect sessions, analytics properties, web streams, browser contexts, and integration state. Use for agent-native setup and connection troubleshooting. Preserves existing client settings and separates configuration, OAuth, workspace authorization, and successful data access.
-
-### [orchestor-aeo-best-practices](skills/orchestor-aeo-best-practices/SKILL.md)
-
-AEO analysis best practices.
-
-**When to use:** Review or produce trustworthy AI visibility, citation, perception, competitor, and source analysis with Orchestor. Load before interpreting report differences, recommending AEO actions, or reviewing a draft analysis. Covers comparison cohorts, metric meaning, evidence, missing data, causality, workspace isolation, paid collection, and untrusted source text.
-
-### [orchestor-aeo-workflows](skills/orchestor-aeo-workflows/SKILL.md)
-
-Run an evidence-to-action AEO workflow.
-
-**When to use:** Run an Orchestor baseline assessment, monthly audit, citation-gap investigation, or content improvement cycle across reports, saved answers, public research, and Issues. Use for multi-step AEO reviews or agency/client reporting. Separates read-only diagnosis, proposed action, requested execution, and follow-up measurement; no guaranteed ranking or citation uplift.
-
-## Installation
-
-This repository is private. Installation requires GitHub access to it.
+## Install
 
 ```bash
-npx skills add orchestor-inc/skills
+npx skills@latest add orchestor-inc/skills
 ```
 
-Install just the skill relevant to your task:
+Select the skills and agents you use. To install one resource skill:
 
 ```bash
-npx skills add orchestor-inc/skills --skill orchestor-visibility
+npx skills@latest add orchestor-inc/skills --skill orchestor-prompts
 ```
 
-The [Orchestor Plugin](https://github.com/orchestor-inc/orchestor-plugin) imports
-these same files and adds client integration. CLI bundles adopt a pinned revision
-of this repository. Updating this repository does not update a released CLI.
+For Claude Code, the [Orchestor Plugin](https://github.com/orchestor-inc/orchestor-plugin)
+also distributes these skills through the native plugin installer. Choose one
+route for the same skills to avoid duplicate instructions. The Plugin is not
+claimed to be listed in Anthropic's official marketplace.
 
-## Usage
+Installation does not authenticate Orchestor. Follow the [CLI guide](https://orchestor.io/docs/cli)
+and check `orc status`. CLI and MCP authentication are separate.
 
-Describe the outcome to your agent, such as “compare our saved AI visibility for
-September with August” or “review this website for agent readiness”. Skills load
-instructions and references as needed. Installation does not authenticate the
-CLI or MCP connection. Each skill works without mandatory sibling skills.
+## Resource skills
 
-## Discovery index
+Use these directly for resource operations or compose them in a parent workflow.
+One resource skill may cover closely related resources with a shared lifecycle;
+there is no one-command-per-skill rule.
 
-The workflow builds the standard discovery index and archives, including each
-skill's references. Run `npm ci` and `node scripts/build-discovery-index.mjs https://github.com/orchestor-inc/skills/releases/download/agent-skills` to
-reproduce the artifacts.
+| Skill | Responsibility |
+| --- | --- |
+| [orchestor-cli](skills/orchestor-cli/SKILL.md) | Operate the Orchestor CLI |
+| [orchestor-brands](skills/orchestor-brands/SKILL.md) | Work with brands and domains |
+| [orchestor-prompts](skills/orchestor-prompts/SKILL.md) | Work with prompts and their context |
+| [orchestor-runs](skills/orchestor-runs/SKILL.md) | Work with measurement runs |
+| [orchestor-reports](skills/orchestor-reports/SKILL.md) | Work with aggregate reports |
+| [orchestor-answers](skills/orchestor-answers/SKILL.md) | Work with saved answers |
+| [orchestor-sources](skills/orchestor-sources/SKILL.md) | Work with sources and citations |
+| [orchestor-research](skills/orchestor-research/SKILL.md) | Research public sources with Orchestor |
+| [orchestor-agentic-web](skills/orchestor-agentic-web/SKILL.md) | Evaluate an agent-facing website |
+| [orchestor-perception](skills/orchestor-perception/SKILL.md) | Analyze attributed brand characteristics |
+| [orchestor-shopping](skills/orchestor-shopping/SKILL.md) | Analyze products and AI shopping evidence |
+| [orchestor-workspace](skills/orchestor-workspace/SKILL.md) | Organize an Orchestor workspace |
+| [orchestor-manage-issues](skills/orchestor-manage-issues/SKILL.md) | Manage Orchestor Issues |
+| [orchestor-integrations](skills/orchestor-integrations/SKILL.md) | Connect agents and external services |
 
-## Skill Structure
+## Workflows and analysis rules
 
+| Skill | Responsibility |
+| --- | --- |
+| [orchestor](skills/orchestor/SKILL.md) | Select the relevant resource or workflow |
+| [orchestor-aeo-workflows](skills/orchestor-aeo-workflows/SKILL.md) | Compose a baseline, period audit, citation investigation, or content cycle |
+| [orchestor-aeo-best-practices](skills/orchestor-aeo-best-practices/SKILL.md) | Review scope, evidence, metrics, and attribution |
+
+For example, a citation investigation can use reports → answers → sources →
+public research. Add an Issue only when requested. Prompt configuration and new
+measurement are separate operations, not automatic steps in an analysis.
+
+## Create and improve workflows
+
+Use an existing skill-authoring tool, such as Anthropic's
+[skill-creator](https://github.com/anthropics/skills/tree/main/skills/skill-creator):
+
+```bash
+npx skills@latest add anthropics/skills --skill skill-creator
 ```
-skills/<skill-name>/
-  SKILL.md
-  references/
-```
 
-Edit these standard files directly. `SKILL.md` provides applicability, choices,
-procedure, and output expectations. References contain exact contracts, examples,
-and command discovery. Do not duplicate skill bodies in the product repository.
+Then ask your agent:
 
-[Benchmark decisions](BENCHMARK.md) explain the upstream mechanisms used.
-[Coverage](COVERAGE.md) maps the public CLI surface to skills and records limits.
-Internal production operations, credentials, and infrastructure remain in the
-operator repository. These customer skills can also supply product agents, but
-this repository does not implement a built-in agent loader.
+> Use skill-creator to turn our completed citation investigation into a reusable
+> workflow using the installed Orchestor resource skills. Keep the CLI contracts
+> in the resource skills. Use the corrections from this run, and try the result
+> on another example before deciding what to change next.
+
+[Composition example](skills/orchestor-aeo-workflows/references/composition.md)
+shows resource inputs and outputs. It is a starting point, not a new workflow
+runtime or a claim that every customer needs the same sequence.
+
+Skills are standard editable files. Use your normal editor, agent, and Git
+workflow. To propose an upstream improvement, open a pull request with the
+request that failed, the change, and what happened when you tried it again.
+Remove customer data and credentials from examples.
+
+Use `npx skills@latest update` to apply upstream updates. Review local changes before updating;
+this repository does not implement automatic merging of local edits. Native
+Plugin updates use the client's plugin update command.
+
+## Coverage and releases
+
+[Coverage](COVERAGE.md) records the audited CLI catalog. It is a routing audit,
+not a live availability guarantee. Read the installed command's `--help` before
+using it. The CLI's bundled skills follow a pinned commit; publishing this repo
+does not publish a new CLI binary.
+
+The existing discovery workflow publishes standard skill archives and an index.
+[Benchmark decisions](BENCHMARK.md) identify the upstream mechanisms.
 
 ## License
 
-UNLICENSED. See [LICENSE](LICENSE). Upstream distribution tooling attribution is
-in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+[MIT](LICENSE). Third-party discovery tooling attribution remains in
+[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).

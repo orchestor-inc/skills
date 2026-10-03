@@ -1,10 +1,10 @@
 ---
 name: orchestor
 description: "Use Orchestor to understand how brands appear in AI answers and decide what to improve. Use when the user asks about AI visibility, AEO, GEO, LLMO, competitor citations, monitoring, public-source research, or agent-ready websites without naming a specific command. Routes to product workflows; not internal Orchestor infrastructure administration."
-license: UNLICENSED
+license: MIT
 metadata:
   author: orchestor
-  version: "0.2.0"
+  version: "0.3.0"
 ---
 
 # Choose an Orchestor workflow
@@ -28,8 +28,12 @@ product documentation when a skill is unavailable.
 | User goal | Skill | Deciding question |
 | --- | --- | --- |
 | Connect, select a workspace, script CLI calls, or diagnose errors | `orchestor-cli` | Is this connection or command execution, rather than analysis? |
-| Compare visibility, mentions, citations, sentiment, or sources | `orchestor-visibility` | Are we analyzing saved answers and reports? |
-| Configure prompts, personas, channels, or collect observations | `orchestor-monitoring` | Does the task change what is measured or request new runs? |
+| Resolve a brand, competitor, or tracked domain | `orchestor-brands` | Which identity does the task refer to? |
+| Configure prompts, topics, tags, or personas | `orchestor-prompts` | What should be measured? |
+| Run observations or inspect measurement state | `orchestor-runs` | Was collection requested, and what is its state? |
+| Read aggregate metrics | `orchestor-reports` | Which scope and cohort are comparable? |
+| Inspect saved answer text | `orchestor-answers` | Which answer supports the claim? |
+| Inspect source URLs, domains, or citation gaps | `orchestor-sources` | Which source record needs investigation? |
 | Research a website, keyword, market, company, or public source | `orchestor-research` | Is the evidence external to saved AI answers? |
 | Check whether agents can read and navigate a website | `orchestor-agentic-web` | Is this a technical site check or journey rather than brand visibility? |
 | Analyze which attributes are attributed to a brand | `orchestor-perception` | Do we need exact quoted evidence and attribute comparisons? |

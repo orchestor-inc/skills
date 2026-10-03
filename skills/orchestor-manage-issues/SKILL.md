@@ -1,10 +1,10 @@
 ---
 name: orchestor-manage-issues
 description: "Create, find, update, classify, and organize tasks and Issues inside an Orchestor workspace, including project and milestone assignment. Use when a user asks to record an action from a workspace URL, a screen, or analysis evidence. Complete the requested record operation; do not substitute GitHub Issues or start implementation and deployment."
-license: UNLICENSED
+license: MIT
 metadata:
   author: orchestor
-  version: "0.2.0"
+  version: "0.3.0"
 ---
 
 # Manage Orchestor Issues

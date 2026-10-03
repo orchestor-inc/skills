@@ -38,3 +38,5 @@ installed leaf command’s `--help` for arguments, schema, permissions and limit
 | `orc workspace link` | Bind a Workspace to the current directory |
 | `orc workspace unlink` | Remove the Workspace binding from the current directory |
 | `orc workspace use` | Set the default Workspace for future commands |
+
+| `orc review` | Run canonical review checks against a git diff |

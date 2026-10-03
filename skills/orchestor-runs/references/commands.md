@@ -13,27 +13,6 @@ installed leaf command’s `--help` for arguments, schema, permissions and limit
 | `orc observations get` | Get current onboarding extraction status |
 | `orc observations configurations confirm` | Confirm onboarding resources and start the first observation batch |
 | `orc observations configurations get` | Get generated onboarding review resources |
-| `orc personas create` | Create a persona |
-| `orc personas delete` | Soft-delete a persona |
-| `orc personas get` | Get a persona |
-| `orc personas list` | List personas |
-| `orc personas update` | Update a persona |
-| `orc personas suggestions refresh` | Generate persona suggestions |
-| `orc personas suggestions generations get` | Get persona suggestion generation |
-| `orc prompts create` | Create AI Search prompt |
-| `orc prompts delete` | Remove an AI Search prompt from active views |
-| `orc prompts disable` | Disable AI Search prompt |
-| `orc prompts enable` | Enable AI Search prompt |
-| `orc prompts get` | Get AI Search prompt |
-| `orc prompts list` | List AI Search prompts |
-| `orc prompts suggestions list` | List prompt suggestions |
-| `orc prompts tags get` | List tags on a prompt |
-| `orc prompts tags update` | Replace prompt tags (bulk) |
-| `orc prompts update` | Update AI Search prompt |
-| `orc prompts suggestions accept` | Accept suggestion (promote to prompt) |
-| `orc prompts suggestions refresh` | Generate prompt suggestions |
-| `orc prompts suggestions reject` | Reject suggestion |
-| `orc prompts suggestions generations get` | Get prompt suggestion generation |
 | `orc regions list` | List supported region catalog |
 | `orc runs cancel` | Cancel a Prompt Run |
 | `orc runs create` | Create a Prompt Run |
@@ -46,20 +25,6 @@ installed leaf command’s `--help` for arguments, schema, permissions and limit
 | `orc runs batches get` | Retrieve a prompt run batch (status polling) |
 | `orc runs batches list` | List prompt run batches |
 | `orc runs batches results get` | Get results of a completed prompt run batch |
-| `orc tags create` | Create tag |
-| `orc tags delete` | Soft-delete tag |
-| `orc tags list` | List tags |
-| `orc tags update` | Update tag |
-| `orc topics create` | Create AI Search topic |
-| `orc topics delete` | Soft-delete AI Search topic |
-| `orc topics get` | Get AI Search topic |
-| `orc topics list` | List AI Search topics |
-| `orc topics suggestions list` | List topic suggestions |
-| `orc topics update` | Update AI Search topic |
-| `orc topics suggestions accept` | Accept a topic suggestion (promote to topic) |
-| `orc topics suggestions refresh` | Generate topic suggestions |
-| `orc topics suggestions reject` | Reject a topic suggestion |
-| `orc topics suggestions generations get` | Get topic suggestion generation |
 | `orc workspaces measurement-configurations get` | Get the Workspace measurement configuration |
 | `orc workspaces measurement-configurations update` | Update the Workspace measurement configuration |
 | `orc workspaces measurement-configurations revisions list` | List append-only measurement configuration revisions |

@@ -1,10 +1,10 @@
 ---
 name: orchestor-perception
 description: "Analyze Orchestor brand perception and attribute rankings from saved answer text, or import explicitly requested quoted attribute observations. Use for brand associations, qualitative comparisons, and exact-evidence annotation. Preserves SHA-256 digests and UTF-16 offsets; attribute mention is not automatically positive sentiment, product truth, or causal attribution."
-license: UNLICENSED
+license: MIT
 metadata:
   author: orchestor
-  version: "0.2.0"
+  version: "0.3.0"
 ---
 
 # Analyze attributed brand characteristics
@@ -16,7 +16,7 @@ source evidence with a plausible summary.
 
 Use for “what do AI answers associate with us?”, “compare perceived strengths”,
 “show quotes behind this attribute”, or an explicit observation-import request.
-For ordinary mention share use `orchestor-visibility` if available.
+For ordinary mention share use `orchestor-reports`, `orchestor-answers`, and `orchestor-sources` if available.
 
 ## Priority rules
 

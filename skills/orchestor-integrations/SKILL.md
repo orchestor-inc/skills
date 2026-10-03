@@ -1,10 +1,10 @@
 ---
 name: orchestor-integrations
 description: "Connect Claude Code, Codex, Cursor, or another supported client to Orchestor MCP; inspect provider connections, OAuth connect sessions, analytics properties, web streams, browser contexts, and integration state. Use for agent-native setup and connection troubleshooting. Preserves existing client settings and separates configuration, OAuth, workspace authorization, and successful data access."
-license: UNLICENSED
+license: MIT
 metadata:
   author: orchestor
-  version: "0.2.0"
+  version: "0.3.0"
 ---
 
 # Connect agents and external services

@@ -1,10 +1,10 @@
 ---
 name: orchestor-research
 description: "Research public websites, search demand, SaaS products and reviews, companies, founders, communities, social posts, videos, and transcripts through Orchestor. Use for source discovery, competitor research, citation-source inspection, market research, keyword analysis, or web scrape/map/crawl/extract tasks. Choose a source-specific command and preserve provenance; not saved AI-answer reporting."
-license: UNLICENSED
+license: MIT
 metadata:
   author: orchestor
-  version: "0.2.0"
+  version: "0.3.0"
 ---
 
 # Research public sources with Orchestor
@@ -15,7 +15,7 @@ source-backed answer, not the largest possible crawl or provider result set.
 ## When to apply
 
 Use when evidence must come from a public page or supported research provider.
-For saved AI-answer metrics use `orchestor-visibility`; for a technical agent-site
+For saved AI-answer metrics use `orchestor-reports`, `orchestor-answers`, and `orchestor-sources`; for a technical agent-site
 audit use `orchestor-agentic-web`, when those skills are installed.
 
 ## Source selection

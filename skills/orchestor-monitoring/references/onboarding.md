@@ -14,7 +14,8 @@ confirmation step. Only use one-shot when starting initial measurement is reques
 Inspect the generated configuration before `observations configurations confirm`.
 Use the returned monitoring scope and IDs. The current confirmation contract
 requires reviewed brand, competitors, topics, prompts, and dimensions; it requires
-10–40 selected prompts with selected parent topics. Validate the actual schema
+1–5 selected prompts on the free plan or 10–40 on paid plans, with selected
+parent topics and at most 40 submitted candidates. Validate the actual schema
 before submission rather than generating arbitrary placeholder IDs.
 
 Every submitted competitor is included regardless of its `selected` flag; omit

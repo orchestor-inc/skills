@@ -1,0 +1,8 @@
+{
+  "name": "@orchestor-inc/skills",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "yaml": "2.9.0"
+  }
+}

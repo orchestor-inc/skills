@@ -1,0 +1,46 @@
+{
+  "$schema": "https://skills.sh/schemas/skills.sh.schema.json",
+  "notGrouped": "bottom",
+  "groupings": [
+    {
+      "title": "Get started",
+      "description": "Connect to Orchestor and choose the right workflow.",
+      "skills": [
+        "orchestor",
+        "orchestor-shared",
+        "orchestor-status",
+        "orchestor-account"
+      ]
+    },
+    {
+      "title": "AI visibility",
+      "description": "Compare brand visibility, inspect answers, and prioritize improvements.",
+      "skills": [
+        "orchestor-brand",
+        "orchestor-answer",
+        "orchestor-report",
+        "orchestor-report-visibility",
+        "orchestor-domain",
+        "orchestor-manage-issues"
+      ]
+    },
+    {
+      "title": "Monitoring",
+      "description": "Organize prompts and run measurements.",
+      "skills": [
+        "orchestor-prompt",
+        "orchestor-prompt-create",
+        "orchestor-prompt-run",
+        "orchestor-topic",
+        "orchestor-tag"
+      ]
+    },
+    {
+      "title": "Integrations",
+      "description": "Connect tools to the Orchestor MCP server.",
+      "skills": [
+        "orchestor-build-mcp-integration"
+      ]
+    }
+  ]
+}

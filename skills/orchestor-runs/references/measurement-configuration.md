@@ -1,3 +1,5 @@
+English | [日本語](measurement-configuration.ja.md)
+
 # Measurement configuration
 
 Read workspace measurement configuration, targets, and revisions before changing

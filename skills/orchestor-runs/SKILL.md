@@ -7,6 +7,8 @@ metadata:
   version: "0.3.0"
 ---
 
+English | [日本語](SKILL.ja.md)
+
 # Work with measurement runs
 
 Keep configuration, accepted execution, terminal execution, and available results

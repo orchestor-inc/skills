@@ -1,3 +1,5 @@
+English | [日本語](product-identity.ja.md)
+
 # Product identity before comparison
 
 Use IDs, confirmed URLs, brand, and supported product identifiers to distinguish

@@ -7,6 +7,8 @@ metadata:
   version: "0.3.0"
 ---
 
+English | [日本語](SKILL.ja.md)
+
 # Choose an Orchestor workflow
 
 Start with the user's outcome. Choose the smallest workflow below, then load the

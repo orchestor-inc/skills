@@ -1,3 +1,5 @@
+English | [日本語](search-demand.ja.md)
+
 # Keywords, SERP, and trends
 
 Choose the question first: ideas/suggestions/related terms; volume/history;

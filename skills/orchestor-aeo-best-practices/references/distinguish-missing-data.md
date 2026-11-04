@@ -4,6 +4,8 @@ impact: HIGH
 impactDescription: Avoids false absence and zero-performance claims
 ---
 
+English | [日本語](distinguish-missing-data.ja.md)
+
 ## Treat missing coverage as unknown
 
 Avoids false absence and zero-performance claims.

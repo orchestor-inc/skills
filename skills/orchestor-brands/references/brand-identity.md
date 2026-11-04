@@ -1,3 +1,5 @@
+English | [日本語](brand-identity.ja.md)
+
 # Brand and competitor identity
 
 Read existing brands before adding or updating them. Match the intended brand

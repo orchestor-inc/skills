@@ -1,3 +1,5 @@
+English | [日本語](authentication.ja.md)
+
 # Authentication and workspace selection
 
 CLI and MCP credentials are separate. Use `orc status` and `orc auth status` for

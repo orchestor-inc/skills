@@ -7,6 +7,8 @@ metadata:
   version: "0.3.0"
 ---
 
+English | [日本語](SKILL.ja.md)
+
 # Research public sources with Orchestor
 
 Choose the evidence source before choosing a command. The goal is a bounded,

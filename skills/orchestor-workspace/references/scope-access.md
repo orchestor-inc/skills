@@ -1,3 +1,5 @@
+English | [日本語](scope-access.ja.md)
+
 # Scope and membership
 
 A local `workspace use/link` selection and a remote workspace mutation are

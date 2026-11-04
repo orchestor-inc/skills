@@ -1,3 +1,5 @@
+English | [日本語](onboarding.ja.md)
+
 # Reviewed onboarding from a website
 
 `observations create` can produce editable onboarding resources for a workspace.

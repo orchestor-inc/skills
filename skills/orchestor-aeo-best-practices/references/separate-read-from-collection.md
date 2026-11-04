@@ -4,6 +4,8 @@ impact: CRITICAL
 impactDescription: Keeps actions within the requested scope and cost
 ---
 
+English | [日本語](separate-read-from-collection.ja.md)
+
 ## Separate analysis from paid collection and changes
 
 Keeps actions within the requested scope and cost.

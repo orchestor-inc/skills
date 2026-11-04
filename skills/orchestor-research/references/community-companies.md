@@ -1,3 +1,5 @@
+English | [日本語](community-companies.ja.md)
+
 # Communities, press releases, and startup research
 
 Choose the source family that matches the evidence:

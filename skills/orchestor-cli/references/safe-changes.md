@@ -1,3 +1,5 @@
+English | [日本語](safe-changes.ja.md)
+
 # Safe changes and retries
 
 **Incorrect:** add `--yes` to every command, call a create command again after a

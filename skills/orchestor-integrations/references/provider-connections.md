@@ -1,3 +1,5 @@
+English | [日本語](provider-connections.ja.md)
+
 # Provider connections
 
 Inspect current connections before starting a new connect session. The current

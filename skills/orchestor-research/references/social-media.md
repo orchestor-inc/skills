@@ -1,3 +1,5 @@
+English | [日本語](social-media.ja.md)
+
 # Social, advertising, video, and transcript evidence
 
 Supported command families include LinkedIn, X, Reddit, YouTube, TikTok, and

@@ -7,6 +7,8 @@ metadata:
   version: "0.3.0"
 ---
 
+English | [日本語](SKILL.ja.md)
+
 # Manage Orchestor Issues
 
 This skill owns interpreting the request, resolving membership, and verifying the

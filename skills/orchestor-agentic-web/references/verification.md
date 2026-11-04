@@ -1,3 +1,5 @@
+English | [日本語](verification.ja.md)
+
 # Evidence-driven checks
 
 Read the exact failed check and its evidence before proposing a fix. A missing

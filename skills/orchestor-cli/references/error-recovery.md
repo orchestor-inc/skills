@@ -1,3 +1,5 @@
+English | [日本語](error-recovery.ja.md)
+
 # Error recovery
 
 | Observation | Action |

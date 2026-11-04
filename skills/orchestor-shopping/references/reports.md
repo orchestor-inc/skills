@@ -1,3 +1,5 @@
+English | [日本語](reports.ja.md)
+
 # Pick the shopping report
 
 | Question | Report family |

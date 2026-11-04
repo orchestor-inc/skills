@@ -1,3 +1,5 @@
+English | [日本語](traffic.ja.md)
+
 # Interpret bots and referrals
 
 Bot/crawler requests, referral clicks, search results, brand mentions, and

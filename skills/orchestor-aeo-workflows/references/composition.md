@@ -1,3 +1,5 @@
+English | [日本語](composition.ja.md)
+
 # Compose a workflow from resource skills
 
 Use the actual request and the corrections from a completed run. Keep resource

@@ -1,3 +1,5 @@
+English | [日本語](baseline.ja.md)
+
 # Baseline assessment
 
 1. Confirm the managed brand website, intended workspace, comparison brands,

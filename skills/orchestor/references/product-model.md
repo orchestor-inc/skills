@@ -1,3 +1,5 @@
+English | [日本語](product-model.ja.md)
+
 # Product relationships
 
 A workspace is an authorization and data boundary. Projects organize work inside

@@ -1,3 +1,5 @@
+English | [日本語](citation-gap.ja.md)
+
 # Citation-gap investigation
 
 Resolve the specific prompt/topic, target brand, competitors, and period. Read

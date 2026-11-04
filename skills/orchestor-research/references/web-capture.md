@@ -1,3 +1,5 @@
+English | [日本語](web-capture.ja.md)
+
 # Choose the web operation
 
 | Output needed | Operation family |

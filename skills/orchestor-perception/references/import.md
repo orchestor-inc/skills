@@ -1,3 +1,5 @@
+English | [日本語](import.ja.md)
+
 # Import semantics
 
 Read `orc perception observations import --help`. The body requires answer_id,

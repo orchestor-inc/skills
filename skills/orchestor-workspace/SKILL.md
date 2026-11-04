@@ -7,6 +7,8 @@ metadata:
   version: "0.3.0"
 ---
 
+English | [日本語](SKILL.ja.md)
+
 # Organize an Orchestor workspace
 
 Use the workspace as the access boundary and projects/initiatives as organization

@@ -1,3 +1,5 @@
+English | [日本語](projects-initiatives.ja.md)
+
 # Projects, milestones, and initiatives
 
 Issue project_id is a UUID. Milestone commands can take projectKey as a positional

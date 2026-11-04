@@ -4,6 +4,8 @@ impact: CRITICAL
 impactDescription: Prevents mismatched populations from appearing as an improvement
 ---
 
+English | [日本語](compare-same-cohort.ja.md)
+
 ## Compare the same cohort before interpreting change
 
 Prevents mismatched populations from appearing as an improvement.

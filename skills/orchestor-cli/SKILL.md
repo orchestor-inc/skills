@@ -7,6 +7,8 @@ metadata:
   version: "0.3.0"
 ---
 
+English | [日本語](SKILL.ja.md)
+
 # Operate the Orchestor CLI
 
 Use this skill for reliable command execution. It is self-contained; task-specific

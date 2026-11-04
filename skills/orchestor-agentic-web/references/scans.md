@@ -1,3 +1,5 @@
+English | [日本語](scans.ja.md)
+
 # Scan requests and stored reports
 
 The scan-create URL is a public HTTP(S) domain root. Bare domains are accepted;

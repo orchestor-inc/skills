@@ -1,3 +1,5 @@
+English | [日本語](batches.ja.md)
+
 # Batch execution
 
 Use a batch only for a requested bounded set. Read `runs batches create --help`.

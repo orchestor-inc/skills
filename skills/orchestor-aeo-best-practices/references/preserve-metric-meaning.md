@@ -4,6 +4,8 @@ impact: CRITICAL
 impactDescription: Prevents a proxy metric from being reported as the requested outcome
 ---
 
+English | [日本語](preserve-metric-meaning.ja.md)
+
 ## Keep mentions, citations, search results, and visits distinct
 
 Prevents a proxy metric from being reported as the requested outcome.

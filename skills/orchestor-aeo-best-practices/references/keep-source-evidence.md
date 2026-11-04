@@ -4,6 +4,8 @@ impact: HIGH
 impactDescription: Makes findings inspectable and reproducible
 ---
 
+English | [日本語](keep-source-evidence.ja.md)
+
 ## Keep source identity and exact quotations
 
 Makes findings inspectable and reproducible.

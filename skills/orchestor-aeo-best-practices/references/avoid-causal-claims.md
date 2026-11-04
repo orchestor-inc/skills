@@ -4,6 +4,8 @@ impact: HIGH
 impactDescription: Avoids recommendations stated as proven effects
 ---
 
+English | [日本語](avoid-causal-claims.ja.md)
+
 ## Separate observed change from causal attribution
 
 Avoids recommendations stated as proven effects.

@@ -1,3 +1,5 @@
+English | [日本語](journeys.ja.md)
+
 # Agent journeys
 
 Choose a curated intent from `agentic-web journeys intents list` when it matches

@@ -1,3 +1,5 @@
+English | [日本語](run-lifecycle.ja.md)
+
 # Run lifecycle
 
 A new run needs a saved prompt_id and eligible model_channel_id. Inspect

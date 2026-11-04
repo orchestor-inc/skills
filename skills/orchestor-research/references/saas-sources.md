@@ -1,3 +1,5 @@
+English | [日本語](saas-sources.ja.md)
+
 # Japanese SaaS research sources
 
 | Source | Useful starting point |

@@ -7,6 +7,8 @@ metadata:
   version: "0.3.0"
 ---
 
+English | [日本語](SKILL.ja.md)
+
 # Run an evidence-to-action AEO workflow
 
 Keep each workflow bounded by the user's goal and workspace. The default analysis

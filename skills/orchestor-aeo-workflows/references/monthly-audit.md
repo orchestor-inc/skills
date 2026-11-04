@@ -1,3 +1,5 @@
+English | [日本語](monthly-audit.ja.md)
+
 # Monthly or period audit
 
 Use explicit UTC period bounds and a fixed comparison cohort. Record changes in

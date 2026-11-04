@@ -1,3 +1,5 @@
+English | [日本語](quoted-evidence.ja.md)
+
 # Keep quotations reproducible
 
 The perception text endpoint returns exact slices, SHA-256 answer digests, and

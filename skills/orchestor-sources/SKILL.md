@@ -7,6 +7,8 @@ metadata:
   version: "0.3.0"
 ---
 
+English | [日本語](SKILL.ja.md)
+
 # Work with sources and citations
 
 Source-domain IDs, tracked customer domains, cited URLs, and fan-out queries are

@@ -1,3 +1,5 @@
+English | [日本語](citation-gap.ja.md)
+
 # Investigate a citation gap
 
 **Incorrect:** report “we are never cited” because an aggregate is empty, or

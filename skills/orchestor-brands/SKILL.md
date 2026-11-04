@@ -7,6 +7,8 @@ metadata:
   version: "0.3.0"
 ---
 
+English | [日本語](SKILL.ja.md)
+
 # Work with brands and domains
 
 Resolve the workspace and read existing records before changing identity. Brand

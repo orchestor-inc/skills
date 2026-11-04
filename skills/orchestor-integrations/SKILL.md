@@ -7,6 +7,8 @@ metadata:
   version: "0.3.0"
 ---
 
+English | [日本語](SKILL.ja.md)
+
 # Connect agents and external services
 
 A configured server or installed plugin is not an authenticated connection.

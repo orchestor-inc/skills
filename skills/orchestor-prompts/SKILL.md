@@ -7,6 +7,8 @@ metadata:
   version: "0.3.0"
 ---
 
+English | [日本語](SKILL.ja.md)
+
 # Work with prompts and their context
 
 Separate the question set from executing it. Reuse the user's business context:

@@ -7,6 +7,8 @@ metadata:
   version: "0.3.0"
 ---
 
+English | [日本語](SKILL.ja.md)
+
 # Analyze products and AI shopping evidence
 
 Resolve the product before comparing shopping evidence. A name match alone is

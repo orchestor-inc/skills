@@ -1,3 +1,5 @@
+English | [日本語](files-views.ja.md)
+
 # Files and saved views
 
 A file registration response is not proof that bytes have been uploaded. Read the

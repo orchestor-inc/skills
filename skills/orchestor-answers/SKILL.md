@@ -7,6 +7,8 @@ metadata:
   version: "0.3.0"
 ---
 
+English | [日本語](SKILL.ja.md)
+
 # Work with saved answers
 
 Resolve the workspace and the report/run/prompt scope supplied by the caller.

@@ -7,6 +7,8 @@ metadata:
   version: "0.3.0"
 ---
 
+English | [日本語](SKILL.ja.md)
+
 # Analyze attributed brand characteristics
 
 Ground each attributed characteristic in the exact saved text. Do not replace

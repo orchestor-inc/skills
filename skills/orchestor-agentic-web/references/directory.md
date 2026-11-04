@@ -1,3 +1,5 @@
+English | [日本語](directory.ja.md)
+
 # Discovery, directory, and publication
 
 Discovery/search/explore help locate relevant sites and existing evidence. Keep

@@ -7,6 +7,8 @@ metadata:
   version: "0.3.0"
 ---
 
+English | [日本語](SKILL.ja.md)
+
 # AEO analysis best practices
 
 Apply these rules before turning evidence into a conclusion or action. The

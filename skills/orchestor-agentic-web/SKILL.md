@@ -7,6 +7,8 @@ metadata:
   version: "0.3.0"
 ---
 
+English | [日本語](SKILL.ja.md)
+
 # Evaluate an agent-facing website
 
 Use technical observations to explain what an agent can discover, read, or do on

@@ -1,3 +1,5 @@
+English | [日本語](output-pagination.ja.md)
+
 # Output and pagination
 
 Prefer `--format json` for structured work. Use `--fields` to keep only needed

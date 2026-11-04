@@ -1,3 +1,5 @@
+English | [日本語](content-cycle.ja.md)
+
 # Content improvement cycle
 
 1. Identify the exact page, user question, and observed citation/answer gap.

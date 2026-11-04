@@ -1,3 +1,5 @@
+English | [日本語](commands-social.ja.md)
+
 # CLI command reference
 
 Catalog snapshot: 2026-10-03, CLI source version 0.6.2. These names were

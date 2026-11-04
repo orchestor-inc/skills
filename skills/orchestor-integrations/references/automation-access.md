@@ -1,3 +1,5 @@
+English | [日本語](automation-access.ja.md)
+
 # Automation access
 
 Use the supported API-key or service-account commands for explicitly requested

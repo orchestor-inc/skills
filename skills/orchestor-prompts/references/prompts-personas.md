@@ -1,3 +1,5 @@
+English | [日本語](prompts-personas.ja.md)
+
 # Prompts, topics, tags, and personas
 
 Create a prompt only after checking for an existing relevant question in the

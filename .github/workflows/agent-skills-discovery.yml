@@ -22,6 +22,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: npm ci --ignore-scripts
+      - run: node scripts/check-localization.mjs
       - run: node scripts/build-discovery-index.mjs https://example.com/skills
 
   publish:

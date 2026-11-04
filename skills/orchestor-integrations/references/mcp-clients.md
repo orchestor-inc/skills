@@ -1,3 +1,5 @@
+English | [日本語](mcp-clients.ja.md)
+
 # MCP clients
 
 Use https://mcp.orchestor.io/mcp with the client's documented HTTP transport and

@@ -1,3 +1,5 @@
+English | [日本語](updates.ja.md)
+
 # Updates, relations, and retries
 
 Search the intended workspace and project before updating. Use a known internal

@@ -4,6 +4,8 @@ impact: CRITICAL
 impactDescription: Protects customer data and interpretation scope
 ---
 
+English | [日本語](preserve-workspace-boundaries.ja.md)
+
 ## Keep customer workspaces isolated
 
 Protects customer data and interpretation scope.

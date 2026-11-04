@@ -1,3 +1,5 @@
+English | [日本語](metrics-and-scope.ja.md)
+
 # Preserve the meaning of metrics
 
 | Report | Typical metrics | What it does not establish |

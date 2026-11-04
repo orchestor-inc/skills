@@ -7,6 +7,8 @@ metadata:
   version: "0.3.0"
 ---
 
+English | [日本語](SKILL.ja.md)
+
 # Work with aggregate reports
 
 Reports summarize saved observations. Establish workspace, brand or other scope,

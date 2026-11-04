@@ -1,3 +1,5 @@
+English | [日本語](interpretation.ja.md)
+
 # Attribute, sentiment, and truth are distinct
 
 “Affordable” appearing beside a brand is an attributed characteristic in the

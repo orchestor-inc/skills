@@ -23,7 +23,7 @@ skills/
 
 ### Naming Conventions
 
-- **Skill directory**: `kebab-case` (e.g., `orchestor-report`, `orchestor-prompt`)
+- **Skill directory**: `kebab-case` (e.g., `orchestor-generate`, `orchestor-video-edit`)
 - **SKILL.md**: Always uppercase, always this exact filename
 - **Scripts**: `kebab-case.sh` or `kebab-case.mjs` (e.g., `deploy.sh`, `collect-signals.mjs`)
 

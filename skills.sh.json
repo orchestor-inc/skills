@@ -3,6 +3,13 @@
   "notGrouped": "bottom",
   "groupings": [
     {
+      "title": "Creative",
+      "description": "Generate images, video and speech.",
+      "skills": [
+        "orchestor-creative"
+      ]
+    },
+    {
       "title": "Resource skills",
       "description": "CLI resources and their lifecycles.",
       "skills": [

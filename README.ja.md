@@ -2,71 +2,59 @@
 
 # Orchestor Agent Skills
 
-[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
+[![Skills](https://img.shields.io/badge/skills-4-blueviolet.svg)](#スキル)
 
-AI クリエイティブプラットフォーム [Orchestor](https://www.orchestor.io)（オーケスター）のエージェントスキルです。
-Claude Code、Cursor、Codex などのコーディングエージェントが、`orc` CLI または Orchestor MCP サーバーを通じて画像・動画・音声を生成できるようにします。
+AI クリエイティブプラットフォーム [Orchestor](https://www.orchestor.io)（オーケスター）で画像・動画・音声を生成するための、AI エージェント向けスキルです。Claude Code、Cursor、Codex など、Markdown のスキルを読み込むコーディングエージェントで使えます。
 
 ## インストール
 
-```bash
-npx skills@latest add orchestor-inc/skills --skill orchestor-creative
-```
+どれか 1 つを選びます。各スキルは、初回の利用時に `orc` CLI をインストールし、ログインを案内します。
 
-表示される一覧からエージェントを選ぶか、名前で指定します。
+### `npx skills` — おすすめ、エージェント共通
 
 ```bash
-npx skills@latest add orchestor-inc/skills --skill orchestor-creative --agent claude-code cursor codex
+npx skills@latest add orchestor-inc/skills
 ```
 
-Claude Code では、[Orchestor プラグイン](https://github.com/orchestor-inc/orchestor-plugin)が同じスキルを MCP 接続と一緒に配布しています。同じスキルを二重にインストールしないよう、どちらか一方を選んでください。
+### Claude Code プラグイン
 
-スキルをインストールしてもログインはされません。先に CLI か MCP を接続します。
+[Orchestor プラグイン](https://github.com/orchestor-inc/orchestor-plugin)は、これらのスキルをホスト型 MCP 接続と一緒に配布しています。
 
 ```bash
-curl -fsSL https://orchestor.io/install | sh
-orc auth login
+claude plugin marketplace add orchestor-inc/orchestor-plugin
+claude plugin install orchestor@orchestor
 ```
 
-または MCP サーバーを追加します。Claude Code の場合:
-
-```bash
-claude mcp add --transport http orchestor https://mcp.orchestor.io/mcp
-```
-
-## 使い方
-
-ふだんの言葉でエージェントに頼みます。
-
-> gpt-image-2 で、コンクリートの床に置いた白いスニーカーの商品写真を作って、URL を教えて。
-
-> seedance-2.5 で夜明けの波の動画を 5 秒作って。生成中はジョブ ID を教えて。
-
-> この原稿を落ち着いた日本語の声で読み上げて、音声ファイルを返して。
-
-エージェントはカタログからモデルを選び、ジョブを送信して完了を待ち、成果物の URL を返します。
+ほかの方法は [INSTALL.ja.md](./INSTALL.ja.md) を参照してください。
 
 ## スキル
 
 | スキル | 内容 |
-| --- | --- |
-| [orchestor-creative](skills/orchestor-creative/SKILL.ja.md) | 画像・動画・音声の生成、モデルの選択、生成ジョブの確認 |
+|---|---|
+| [`orchestor-generate`](./skills/orchestor-generate) | Orchestor のカタログ（GPT Image 2.6、Seedream、Seedance 2.5、Veo 3.1、Kling など）での画像・動画の生成、参照画像を使った編集、画像から動画、生成ジョブの確認。 |
+| [`orchestor-video-edit`](./skills/orchestor-video-edit) | 既存の動画の編集。アップスケール、背景削除、字幕、リフレーム、リップシンク、トーキングアバター、モーションコントロール。 |
+| [`orchestor-audio`](./skills/orchestor-audio) | プリセットの声によるテキスト読み上げ、録音のボイスチェンジ、文字起こし。 |
+| [`orchestor-product-photoshoot`](./skills/orchestor-product-photoshoot) | 商品写真から作る、ブランド品質の商品画像。7 つのモード（スタジオ、ライフスタイル、Pinterest、ヒーローバナー、広告パック、コンセプト、リスタイル）。 |
 
-### 以前のワークスペース向けスキル
+スキルはつなげて使えます。`orchestor-product-photoshoot` が静止画を作り、`orchestor-generate` がそれを動かし、`orchestor-audio` がナレーションを作り、`orchestor-video-edit` がリップシンク、字幕、リフレームで仕上げます。[COOKBOOK.ja.md](./COOKBOOK.ja.md) を参照してください。
 
-このリポジトリのほかのスキル（`orchestor-cli`、`orchestor-brands`、`orchestor-prompts`、`orchestor-runs`、`orchestor-reports`、`orchestor-answers`、`orchestor-sources`、`orchestor-research`、`orchestor-agentic-web`、`orchestor-perception`、`orchestor-shopping`、`orchestor-workspace`、`orchestor-manage-issues`、`orchestor-integrations`、`orchestor`、`orchestor-aeo-workflows`、`orchestor-aeo-best-practices`）は、Orchestor の以前の分析コマンドを扱います。既存のインストールのために残しており、クリエイティブの制作には使いません。
+## 早見表
 
-## 更新
-
-```bash
-npx skills@latest update
-```
-
-更新の前にローカルの編集を確認してください。ローカルの変更は自動では統合されません。
-
-## コントリビュート
-
-スキルは通常の `SKILL.md` ファイルです。うまくいかなかった依頼、変更内容、もう一度試した結果を添えて Pull Request を開いてください。英語の各ファイルには日本語訳の `.ja.md` があり、`node scripts/check-localization.mjs` で両者が一致しているかを検査します。例からは顧客データと資格情報を取り除いてください。
+| やりたいこと | スキル | 補足 |
+|---|---|---|
+| プロンプトから画像を生成する | `orchestor-generate` | 既定は `gpt-image-2.6`。安くしたいときは `seedream-5-flash` |
+| 参照画像を使って画像を編集する | `orchestor-generate` | `--image-urls` |
+| 動画を生成する、写真を動かす | `orchestor-generate` | 既定は `seedance-2.5`。最初のフレームは `--image-url` |
+| スタジオ、ライフスタイル、バナー背景の商品写真 | `orchestor-product-photoshoot` | 参照画像とモード別テンプレート |
+| 動画を 4K にアップスケールする | `orchestor-video-edit` | `topaz-video` |
+| 動画の背景を削除する | `orchestor-video-edit` | `sam-3.1-video` |
+| 字幕を付ける | `orchestor-video-edit` | `veed-subtitles` |
+| 動画を 9:16 にする | `orchestor-video-edit` | `luma-ray-3.2-reframe` |
+| 顔を新しい音声にリップシンクする | `orchestor-video-edit` | `sync-lipsync-2`。写真からなら `kling-avatar-2.0` |
+| 原稿からナレーションを作る | `orchestor-audio` | `qwen-audio-3.0-tts` または `eleven-v3` |
+| 録音の声を差し替える | `orchestor-audio` | `orc creative voice change` |
+| 音声を文字起こしする | `orchestor-audio` | `orc creative stt transcribe` |
 
 ## ドキュメント
 
@@ -76,6 +64,6 @@ npx skills@latest update
 
 ## ライセンス
 
-[MIT](LICENSE)。サードパーティのディスカバリーツールの帰属表示は [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) にあります。
+MIT。[LICENSE](./LICENSE) を参照してください。
 
-<!-- translation-source-sha256: c7fc248ad36333cb902dc9aaf727da3b6a902763cf5b3b993dda08fe0cc2ded7 -->
+<!-- translation-source-sha256: ef92cb605056944efd97fe7e4d4d67992496a6beb87369398cf23861bb6016db -->

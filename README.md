@@ -2,85 +2,64 @@ English | [日本語](README.ja.md)
 
 # Orchestor Agent Skills
 
-[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
+[![Skills](https://img.shields.io/badge/skills-4-blueviolet.svg)](#skills)
 
-Agent skills for [Orchestor](https://www.orchestor.io), the AI creative platform.
-Give Claude Code, Cursor, Codex and other coding agents the know-how to generate
-images, video and speech through the `orc` CLI or the Orchestor MCP server.
+AI agent skills for image, video and audio generation via [Orchestor](https://www.orchestor.io),
+the AI creative platform. Works with Claude Code, Cursor, Codex, and other AI
+coding agents that load Markdown-based skills.
 
 ## Install
 
-```bash
-npx skills@latest add orchestor-inc/skills --skill orchestor-creative
-```
+Pick one. Each skill installs the `orc` CLI and asks you to sign in on first use.
 
-Choose your agents when prompted, or name them:
+### `npx skills` — recommended, cross-agent
 
 ```bash
-npx skills@latest add orchestor-inc/skills --skill orchestor-creative --agent claude-code cursor codex
+npx skills@latest add orchestor-inc/skills
 ```
 
-For Claude Code, the [Orchestor plugin](https://github.com/orchestor-inc/orchestor-plugin)
-ships the same skills with the MCP connection. Pick one route so the same skill
-is not installed twice.
+### Claude Code plugin
 
-Installing a skill does not sign you in. Connect the CLI or MCP first:
+The [Orchestor plugin](https://github.com/orchestor-inc/orchestor-plugin) ships
+these skills with the hosted MCP connection:
 
 ```bash
-curl -fsSL https://orchestor.io/install | sh
-orc auth login
+claude plugin marketplace add orchestor-inc/orchestor-plugin
+claude plugin install orchestor@orchestor
 ```
 
-Or add the MCP server, for example in Claude Code:
-
-```bash
-claude mcp add --transport http orchestor https://mcp.orchestor.io/mcp
-```
-
-## Usage
-
-Ask your agent in plain language:
-
-> Generate a product shot of a white sneaker on a concrete floor with gpt-image-2 and give me the URL.
-
-> Make a 5-second video of waves at dawn with seedance-2.5. Tell me the job ID while it renders.
-
-> Read this script aloud with a calm Japanese voice and return the audio file.
-
-The agent picks a model from the catalog, submits the job, waits for it and
-returns the output URL.
+More options in [INSTALL.md](./INSTALL.md).
 
 ## Skills
 
-| Skill | What it does |
-| --- | --- |
-| [orchestor-creative](skills/orchestor-creative/SKILL.md) | Generate images, video and speech, choose models, and track generation jobs |
+| Skill | Description |
+|---|---|
+| [`orchestor-generate`](./skills/orchestor-generate) | Image and video generation across the Orchestor catalog (GPT Image 2.6, Seedream, Seedance 2.5, Veo 3.1, Kling, …), image edits with references, image-to-video, and generation jobs. |
+| [`orchestor-video-edit`](./skills/orchestor-video-edit) | Edit an existing video: upscale, background removal, captions, reframe, lip sync, talking avatars, and motion control. |
+| [`orchestor-audio`](./skills/orchestor-audio) | Text to speech with preset voices, voice change for recordings, and transcription. |
+| [`orchestor-product-photoshoot`](./skills/orchestor-product-photoshoot) | Brand-quality product images from a product photo. 7 modes (studio, lifestyle, Pinterest, hero banner, ad pack, conceptual, restyle). |
 
-### Earlier workspace skills
+The skills chain: `orchestor-product-photoshoot` makes the stills, `orchestor-generate`
+animates them, `orchestor-audio` writes the narration, and `orchestor-video-edit`
+lip syncs, captions and reframes the result. See [COOKBOOK.md](./COOKBOOK.md).
 
-The other skills in this repository (`orchestor-cli`, `orchestor-brands`,
-`orchestor-prompts`, `orchestor-runs`, `orchestor-reports`, `orchestor-answers`,
-`orchestor-sources`, `orchestor-research`, `orchestor-agentic-web`,
-`orchestor-perception`, `orchestor-shopping`, `orchestor-workspace`,
-`orchestor-manage-issues`, `orchestor-integrations`, `orchestor`,
-`orchestor-aeo-workflows` and `orchestor-aeo-best-practices`) cover Orchestor's
-earlier analysis commands. They stay here for existing installs and are not
-part of the creative workflow.
+## Quick reference
 
-## Update
-
-```bash
-npx skills@latest update
-```
-
-Review local edits before updating; local changes are not merged automatically.
-
-## Contributing
-
-Skills are plain `SKILL.md` files. Open a pull request with the request that
-failed, the change, and what happened when you tried it again. Every English
-file has a Japanese `.ja.md` translation; `node scripts/check-localization.mjs`
-checks that they match. Remove customer data and credentials from examples.
+| What you want | Skill | Note |
+|---|---|---|
+| Generate an image from a prompt | `orchestor-generate` | Defaults to `gpt-image-2.6`; `seedream-5-flash` when the user asks for cheaper |
+| Edit an image with a reference | `orchestor-generate` | `--image-urls` |
+| Generate a video, or animate a photo | `orchestor-generate` | Defaults to `seedance-2.5`; `--image-url` for the first frame |
+| Product photo on a studio, lifestyle or banner background | `orchestor-product-photoshoot` | Reference image + mode template |
+| Upscale a video to 4K | `orchestor-video-edit` | `topaz-video` |
+| Remove a video's background | `orchestor-video-edit` | `sam-3.1-video` |
+| Add captions | `orchestor-video-edit` | `veed-subtitles` |
+| Change a video to 9:16 | `orchestor-video-edit` | `luma-ray-3.2-reframe` |
+| Lip sync a face to new audio | `orchestor-video-edit` | `sync-lipsync-2`, or `kling-avatar-2.0` from a photo |
+| Narration from a script | `orchestor-audio` | `qwen-audio-3.0-tts` or `eleven-v3` |
+| Replace the voice in a recording | `orchestor-audio` | `orc creative voice change` |
+| Transcribe audio | `orchestor-audio` | `orc creative stt transcribe` |
 
 ## Documentation
 
@@ -90,5 +69,4 @@ checks that they match. Remove customer data and credentials from examples.
 
 ## License
 
-[MIT](LICENSE). Third-party discovery tooling attribution is in
-[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+MIT — see [LICENSE](./LICENSE).
